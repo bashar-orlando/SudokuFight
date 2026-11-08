@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sudoku</title>
+<title>Sudoku Fight v1.0.0</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
 <style>
 :root{--bg:#e9eef3;--panel:#fff;--ink:#14213d;--muted:#5b6b82;--line:#b9c4d2;--thick:#14213d;--sel:#ffd166;--peer:#e3ebf5;--same:#8fb4e8;--samefg:#0b2a5c;--bad:#d62839;--badbg:#fde4e6;--given:#14213d;--mine:#2a6fdb;
@@ -214,7 +214,7 @@ function App() {
   const n = br * bc;
   const header = (
     <div>
-      <div className="top"><h1>Sudoku</h1><button className="gear" aria-label="Settings" onClick={() => setShowSettings(true)}>⚙︎</button></div>
+      <div className="top"><h1>Sudoku Fight <small style={{ fontSize: "0.5em", fontWeight: 600, color: "var(--muted)" }}>v1.0.0</small></h1><button className="gear" aria-label="Settings" onClick={() => setShowSettings(true)}>⚙︎</button></div>
       <div className="bar">
         <label className="field">Box
           <select value={br} onChange={(e) => setBr(+e.target.value)} aria-label="Box rows">
